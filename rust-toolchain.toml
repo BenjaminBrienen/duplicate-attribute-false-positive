@@ -1,0 +1,5 @@
+[toolchain]
+channel = "beta"
+components = ["clippy"]
+targets = ["unknown-linux-gnu"]
+profile = "minimal"

@@ -1,0 +1,25 @@
+info: syncing channel updates for beta-x86_64-unknown-linux-gnu
+info: latest update on 2026-10-18 for version 1.100.0-beta.7 (fd8e211ae 2026-10-17)
+info: component clippy is up to date
+warn: skipping unavailable component rust-std for target unknown-linux-gnu
+warning: duplicated attribute
+ --> src/lib.rs:5:19
+  |
+5 |     #[regex(r"b", priority = 2)]
+  |                   ^^^^^^^^^^^^
+  |
+note: first defined here
+ --> src/lib.rs:4:19
+  |
+4 |     #[regex(r"a", priority = 1)]
+  |                   ^^^^^^^^^^^^
+help: remove this attribute
+ --> src/lib.rs:5:19
+  |
+5 |     #[regex(r"b", priority = 2)]
+  |                   ^^^^^^^^^^^^
+  = help: for further information visit https://rust-lang.github.io/rust-clippy/beta/index.html#duplicated_attributes
+  = note: `#[warn(clippy::duplicated_attributes)]` on by default
+
+warning: `duplicate-attribute-false-positive` (lib) generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.03s
